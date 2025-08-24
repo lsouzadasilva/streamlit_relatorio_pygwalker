@@ -2,5 +2,3 @@ streamlit
 pygwalker
 pandas
 openpyxl
-
-
