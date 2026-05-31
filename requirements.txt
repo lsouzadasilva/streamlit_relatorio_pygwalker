@@ -2,3 +2,4 @@ streamlit
 pygwalker
 pandas
 openpyxl
+tornado
