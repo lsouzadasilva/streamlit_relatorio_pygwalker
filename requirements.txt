@@ -1,5 +1,5 @@
-streamlit
-pygwalker
-pandas
-openpyxl
-tornado
+streamlit==1.45.1
+pandas==2.2.3
+openpyxl==3.1.5
+pygwalker==0.4.9.15
+tornado==6.5.1
