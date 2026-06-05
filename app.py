@@ -37,9 +37,9 @@ def main():
     uploaded_file = upload()
     if uploaded_file is not None:
         if uploaded_file.name.endswith(".csv"):
-            df = pd.read_csv(uploaded_file)
+            df = pd.read_csv(uploaded_file, encoding='Windows-1252', sep=';', decimal=',')
         else:
-            df = pd.read_excel(uploaded_file)
+            df = pd.read_excel(uploaded_file, encoding='Windows-1252', sep=';', decimal=',')
         
         pyg_app = StreamlitRenderer(df, spec="./gw_config.json", spec_io_mode="rw")
         pyg_app.explorer()
